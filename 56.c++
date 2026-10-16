@@ -17,3 +17,16 @@ public:
         return ans;
     }
 };
+
+int main() {
+    Solution solution;
+    vector<vector<int>> intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+    vector<vector<int>> mergedIntervals = solution.merge(intervals);
+
+    for (const auto& interval : mergedIntervals) {
+        cout << "[" << interval[0] << ", " << interval[1] << "] ";
+    }
+    cout << endl;
+
+    return 0;
+}
